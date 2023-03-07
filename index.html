@@ -30,15 +30,23 @@
   </div>
 </div>
 </div>
-<audio controls autoplay id="my_audio" loop="loop">
+<audio controls  id="my_audio" loop="loop">
   <source src="videoplayback.mp3" type="audio/mp3">
   Your browser does not support the audio element.
 </audio>
-<script type="text/javascript">
-    window.onload = function () {
+<!-- <script type="text/javascript">
+    window.onload=function() {
     document.getElementById("my_audio").play();
   }
-</script>
+</script> -->
+  <script>
+    function playsound(videoplayback) {
+    let audio = new Audio(videoplayback);
+    audio.loop = true;
+    audio.play();
+  }
+  playsound("videoplayback.mp3");
+  </script>
   <script src="main.js"></script>
 </body>
 </html>
