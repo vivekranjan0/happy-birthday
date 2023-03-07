@@ -1,5 +1,5 @@
 audio {
-  opacity: 0.1;
+  visibility: hidden;
 }
 
 body {
@@ -140,7 +140,7 @@ p {
 .name {
   position: absolute;
   left:150px;
-  top:200px;
+  top:280px;
   color: #333;
   text-decoration: underline;
 }
